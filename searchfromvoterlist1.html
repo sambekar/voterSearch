@@ -21,23 +21,80 @@
       padding: 8px;
       background: #f0f0f0;
       border-radius: 4px;
+      display: grid;
     }
+    table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
   </style>
 </head>
 <body>
-  <h3>294 PCMC school number 55, South North Bldg, Ground Floor, South Side Room number 2, Rahatani<br>
-    295-PCMC school number 55, South North Bldg, Ground Floor, South Side Room number 1, Rahatani<br>
-    296-PCMC school number 55, East West Bldg, Ground Floor, From east side room number 3, Rahatani<br>
-    297-PCMC school number 55, East West Bldg, Ground Floor, From east side room number 2, Rahatani<br>
-    298-PCMC school number 55, East West Bldg, Ground Floor, From east side room number 1, Rahatani<br>
-    299-Maharishi Vidya Mandir High Sch and Jr Clg, Grd Flr, from east side parking room number 1, Shrinagar, Rahatani<br>
-    300-Maharishi Vidya Mandir High Sch and Jr Clg, Grd Flr, from east side parking room number 2, Shrinagar, Rahatani<br>
-    301-Five Garden cooperative housing society club house room number 1 rahatani</h3>
+  <table>
+    <thead>
+        <tr>
+            <th>PART NUMBER</th>
+            <th>POLLING STATION ADDRESS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>294</td>
+            <td>PCMC school number 55, South North Bldg, Ground Floor, South Side Room number 2, Rahatani</td>
+        </tr>
+        <tr>
+            <td>295</td>
+            <td>PCMC school number 55, South North Bldg, Ground Floor, South Side Room number 1, Rahatani</td>
+        </tr>
+        <tr>
+            <td>296</td>
+            <td>PCMC school number 55, East West Bldg, Ground Floor, From east side room number 3, Rahatani</td>
+        </tr>
+        <tr>
+            <td>297</td>
+            <td>PCMC school number 55, East West Bldg, Ground Floor, From east side room number 2, Rahatani</td>
+        </tr>
+        <tr>
+            <td>298</td>
+            <td>PCMC school number 55, East West Bldg, Ground Floor, From east side room number 1, Rahatani</td>
+        </tr>
+        <tr>
+            <td>299</td>
+            <td>Maharishi Vidya Mandir High Sch and Jr Clg, Grd Flr, from east side parking room number 1, Shrinagar, Rahatani</td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>Maharishi Vidya Mandir High Sch and Jr Clg, Grd Flr, from east side parking room number 2, Shrinagar, Rahatani</td>
+        </tr>
+        <tr>
+            <td>301</td>
+            <td>Five Garden cooperative housing society club house room number 1 rahatani</td>
+        </tr>
+    </tbody>
+</table>
+  
   <div class="search-box">
     <label for="search-input">Search:</label>
     <input type="text" id="search-input" placeholder="Type to search...">
   </div>
+  <table>
+  <thead>
+    <tr><td>Name of the voter</td><td>Serial Number within part</td><td>Part Number</td>
+  </tr>
+  </thead>
+  </table>
+
   <ul class="results" id="results-list">
+    
     <!-- Filtered results will appear here -->
   </ul>
 
